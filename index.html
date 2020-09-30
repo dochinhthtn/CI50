@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form-register></form-register>
+    
+    <!-- <input-wrapper label="Bạn có người yêu chưa" type="checkbox" value="yes"></input-wrapper> -->
+</body>
+
+<template id="template-input-wrapper">
+    <div class="input-wrapper">
+        <label for="" id="input-label"></label>
+        <input type="text" id="input-main">
+        <div id="input-error"></div>
+    </div>
+</template>
+
+<template id="template-form-register">
+    <form class="form-register">
+        <h2>Đăng kí tài khoản</h2>
+        <input-wrapper id="name" label="Tên đăng kí" type="text" error="" value=""></input-wrapper>
+        <input-wrapper id="email" label="Email" type="email" error="" value=""></input-wrapper>
+        <input-wrapper id="password" label="Mật khẩu" type="password" error="" value=""></input-wrapper>
+        <input-wrapper id="password-confirmation" label="Mật khẩu" type="password" error="" value=""></input-wrapper>
+        <button>Đăng kí</button>
+    </form>
+</template>
+
+<script src="./js/app.js" type="module"></script>
+</html>
